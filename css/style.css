@@ -2,8 +2,8 @@
 
 
 @font-face {
-    font-family: 'Raspberie';
-    src: url('../assets/fontes/RaspberiePersonalUseOnly.ttf') format('truetype');
+    font-family: 'Sableklish';
+    src: url('../assets/fontes/Sableklish.ttf') format('truetype');
 }
 
 * {
@@ -11,30 +11,173 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #3B422E;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-/*
-.navbar{
-    background-color: brown;
+
+.navbar {
+    height: 10vh;
+
 }
-*/
 
 .navbar a {
     text-transform: uppercase;
+    margin: auto 5px;
+}
+
+/* CSS personalizado */
+.navbar-nav .nav-link {
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 1px;
+    /* Posição do sublinhado */
+    left: 0%;
+    /* Inicie fora da borda direita */
+    width: 0;
+    /* Comece sem largura */
+    height: 3px;
+    /* Altura do sublinhado */
+    background-color: #7C9156;
+    /* Cor do sublinhado */
+    transition: width 0.3s ease;
+    /* Efeito de transição */
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link:focus::after {
+    width: 100%;
+    /* Quando houver hover ou foco, estenda o sublinhado */
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+    /* Mantenha o sublinhado para o link ativo */
+}
+
+
+#quem-sou h2, #formacao h2{
+    color: #3B422E;
+    font-size: 2.8rem;
+    font-weight: 400;
+    font-family: 'Sableklish', sans-serif;
 }
 
 /*HOME*/
 
-#home{
+#home {
     display: flex;
     align-items: center;
 }
 
 #home h1 {
-    font-family: 'Raspberie', sans-serif;
+    font-family: 'Sableklish', sans-serif;
     font-size: 4rem;
 }
+
+#home button {
+    border: 1px solid #3B422E;
+    background-color: transparent;
+    width: 140px;
+    margin: 1rem 5px;
+}
+
+#home button:hover {
+    background-color: #3B422E;
+    color: #fff;
+    transition: 0.4s;
+}
+
+.btn:hover i {
+    color: #fff;
+    transition: 0.4s;
+}
+
+/*Sobre*/
+#quem-sou{
+    padding: 2rem 2rem 2rem 4rem;
+    margin-top: 2rem;
+}
+
+#quem-sou p{
+    width: 80%;
+    margin-top: 2rem;
+    line-height: 1.8;
+}
+#quem-sou .img-eu{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#quem-sou img{
+    width: 26rem;
+    border-radius: 0 40px 0 40px;
+}
+
+/*Formação*/
+#formacao{
+    margin-top: 2rem;
+    padding: 2rem 4rem;
+}
+
+#formacao h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    position: relative;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #7C9156;
+  }
+  
+  .timeline-event {
+    display: flex;
+    align-items: center;
+  }
+  
+  .timeline-event-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .timeline-event-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #7C9156;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-event-description {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
