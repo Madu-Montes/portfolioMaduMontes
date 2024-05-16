@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 @font-face {
     font-family: 'Sableklish';
     src: url('../assets/fontes/Sableklish.ttf') format('truetype');
@@ -18,10 +17,8 @@ html {
     scroll-behavior: smooth;
 }
 
-
 .navbar {
     height: 10vh;
-
 }
 
 .navbar a {
@@ -29,7 +26,6 @@ html {
     margin: auto 5px;
 }
 
-/* CSS personalizado */
 .navbar-nav .nav-link {
     position: relative;
 }
@@ -38,40 +34,33 @@ html {
     content: '';
     position: absolute;
     bottom: 1px;
-    /* Posição do sublinhado */
     left: 0%;
-    /* Inicie fora da borda direita */
     width: 0;
-    /* Comece sem largura */
     height: 3px;
-    /* Altura do sublinhado */
     background-color: #7C9156;
-    /* Cor do sublinhado */
     transition: width 0.3s ease;
-    /* Efeito de transição */
 }
 
 .navbar-nav .nav-link:hover::after,
 .navbar-nav .nav-link:focus::after {
     width: 100%;
-    /* Quando houver hover ou foco, estenda o sublinhado */
 }
 
 .navbar-nav .nav-link.active::after {
     width: 100%;
-    /* Mantenha o sublinhado para o link ativo */
 }
 
-
-#quem-sou h2, #formacao h2{
+#quem-sou h2,
+#formacao h2,
+#habilidades h2,
+#projetos h2 {
     color: #3B422E;
     font-size: 2.8rem;
     font-weight: 400;
     font-family: 'Sableklish', sans-serif;
 }
 
-/*HOME*/
-
+/* HOME */
 #home {
     display: flex;
     align-items: center;
@@ -87,6 +76,8 @@ html {
     background-color: transparent;
     width: 140px;
     margin: 1rem 5px;
+    cursor: pointer;
+    /* Adicionado */
 }
 
 #home button:hover {
@@ -95,39 +86,44 @@ html {
     transition: 0.4s;
 }
 
-.btn:hover i {
+#home .btn i {
+    color: #3B422E;
+}
+
+#home .btn:hover i {
     color: #fff;
     transition: 0.4s;
 }
 
-/*Sobre*/
-#quem-sou{
+/* Sobre */
+#quem-sou {
     padding: 2rem 2rem 2rem 4rem;
     margin-top: 2rem;
 }
 
-#quem-sou p{
+#quem-sou p {
     width: 80%;
     margin-top: 2rem;
     line-height: 1.8;
 }
-#quem-sou .img-eu{
+
+#quem-sou .img-eu {
     display: flex;
     justify-content: flex-end;
 }
 
-#quem-sou img{
+#quem-sou img {
     width: 26rem;
     border-radius: 0 40px 0 40px;
 }
 
-/*Formação*/
-#formacao{
+/* Formação */
+#formacao {
     margin-top: 2rem;
     padding: 2rem 4rem;
 }
 
-#formacao h2{
+#formacao h2 {
     text-align: center;
     margin-bottom: 4rem;
 }
@@ -138,9 +134,9 @@ html {
     align-items: center;
     margin-top: 2rem;
     position: relative;
-  }
-  
-  .timeline::before {
+}
+
+.timeline::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -148,20 +144,20 @@ html {
     right: 0;
     height: 2px;
     background-color: #7C9156;
-  }
-  
-  .timeline-event {
+}
+
+.timeline-event {
     display: flex;
     align-items: center;
-  }
-  
-  .timeline-event-content {
+}
+
+.timeline-event-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .timeline-event-icon {
+}
+
+.timeline-event-icon {
     width: 80px;
     height: 80px;
     background-color: #7C9156;
@@ -173,11 +169,148 @@ html {
     font-weight: bold;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-  }
-  
-  .timeline-event-description {
+    cursor: pointer;
+}
+
+.timeline-event-description {
     text-align: center;
     display: flex;
     flex-direction: column;
-  }
-  
+}
+
+.infos-formacao {
+    height: 8rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos-formacao span {
+    font-size: 1.1rem;
+    color: #3B422E;
+    text-align: center;
+    margin: 0;
+}
+
+
+/* Habilidades */
+/* Habilidades */
+#habilidades {
+    text-align: center;
+    padding: 5rem 4rem;
+}
+
+#habilidades h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#habilidades .icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#habilidades .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding: 1rem;
+}
+
+#habilidades .icon-container img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#habilidades .icon-container img:hover {
+    transform: scale(1.1);
+}
+
+#habilidades .icon-container p {
+    margin: 0.5rem 0;
+}
+
+.progress {
+    width: 100%;
+    height: 5px;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.progress-bar.powerbi,
+.progress-bar.html,
+.progress-bar.css,
+.progress-bar.bootstrap,
+.progress-bar.git,
+.progress-bar.javascript,
+.progress-bar.tryhackme,
+.progress-bar.mysql {
+    background-color: #3B422E;
+}
+
+
+/* Projetos */
+#projetos {
+    padding: 2rem 4rem;
+}
+
+#projetos h2 {
+    margin-bottom: 4rem;
+}
+
+#projetos .card {
+    margin: 15px auto;
+}
+
+#projetos a {
+    background-color: #3B422E;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#projetos a:hover {
+    background-color: transparent;
+    color: #3B422E;
+    border: 1px solid #3B422E;
+}
+
+#projetos button{
+    width: 35px;
+    height: 35px;
+}
+
+/* footer */
+.footer {
+    background-color: #3B422E;
+    color: #fff;
+    height: 100px;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.footer p,
+i {
+    color: #fff;
+}
+
+.footer-logo {
+    width: 80px;
+}
+
+.social-icons a i {
+    font-size: 30px;
+    margin: 0.5rem;
+}
