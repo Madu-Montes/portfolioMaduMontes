@@ -1,92 +1,115 @@
-@media (min-width: 1920px) and (max-width: 2000px) {
-    
-}
+@media (min-width: 1920px) and (max-width: 2000px) {}
 
-@media (min-width: 1600px) and (max-width: 1919px) {
-    
+@media (min-width: 1600px) and (max-width: 1919px) {}
 
-}
+@media (min-width: 1200px) and (max-width: 1599px) {}
 
-@media (min-width: 1200px) and (max-width: 1599px) {
-    
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    
-
-}
+@media (min-width: 992px) and (max-width: 1199px) {}
 
 @media (min-width: 768px) and (max-width: 991px) {
-    
+  #quem-sou {
+    padding: 1rem;
+  }
 
+  #quem-sou p {
+    width: 80%;
+  }
+
+  #quem-sou img {
+    width: 23rem;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    
+  #quem-sou {
+    padding: 1rem;
+  }
 
+  #quem-sou p {
+    width: 100%;
+  }
+
+  #quem-sou img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 575px) {
-    
+  #quem-sou {
+    padding: 1rem;
+  }
 
+  #quem-sou p {
+    width: 100%;
+  }
+
+  #quem-sou img {
+    width: 100%;
+  }
 }
 
 @media (min-width: 391px) and (max-width: 480px) {
-    #quem-sou {
-        padding: 1rem;
-    }
+  #quem-sou {
+    padding: 1rem;
+  }
 
-    #quem-sou p {
-        width: 100%;
-    }
+  #quem-sou p {
+    width: 100%;
+  }
+
+  #projetos {
+    padding: 2rem;
+  }
 
 }
 
 @media (min-width: 360px) and (max-width: 390px) {
-    #home h1{
-        text-align: center;
-    }
+  #home h1 {
+    text-align: center;
+  }
 
-    #quem-sou {
-        padding: 1rem;
-    }
+  #quem-sou {
+    padding: 1rem;
+  }
 
-    #quem-sou p {
-        width: 100%;
-    }
+  #quem-sou p {
+    width: 100%;
+  }
+
+  #projetos {
+    padding: 2rem;
+  }
 
 }
 
 
 @media (max-width: 991.98px) {
-    .navbar-toggler-icon {
-      background-color: #fff; 
-    }
-  
-    .navbar-collapse {
-      background-color: #7c9156; 
-      height: 50vh;
-      border-radius: 5px; 
-      padding: 10px; 
-    }
-  
-    .navbar-nav {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .navbar-nav .nav-link {
-      display: block;
-      padding: 0.5rem 1rem;
-      margin: 10px 0;
-      background-color: transparent; 
-      transition: background-color 0.3s;
-    }
-  
-    .navbar-nav .nav-link:hover,
-    .navbar-nav .nav-link:focus {
-      color: #fff;
-    }
+  .navbar-toggler-icon {
+    background-color: #fff;
   }
-  
+
+  .navbar-collapse {
+    background-color: #7c9156;
+    height: 50vh;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    margin: 10px 0;
+    background-color: transparent;
+    transition: background-color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link:focus {
+    color: #fff;
+  }
+}
