@@ -143,7 +143,7 @@ html {
     left: 0;
     right: 0;
     height: 2px;
-    background-color: #7C9156;
+    background-color: #7c9156;
 }
 
 .timeline-event {
@@ -275,10 +275,12 @@ html {
     margin: 15px auto;
 }
 
-#projetos a {
+#projetos .card-body a {
     background-color: #3B422E;
     color: #fff;
     transition: 0.4s;
+    width: 40%;
+    font-size: 14px;
 }
 
 #projetos a:hover {
@@ -287,9 +289,22 @@ html {
     border: 1px solid #3B422E;
 }
 
-#projetos button{
+#projetos .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 35px;
     height: 35px;
+}
+
+#projetos .btn i {
+    color: #fff;
+    transition: color 0.4s;
+}
+
+#projetos .btn:hover i {
+    color: #3B422E;
+    transition: color 0.4s;
 }
 
 /* footer */
@@ -308,6 +323,7 @@ i {
 
 .footer-logo {
     width: 80px;
+    margin-left: 60%;
 }
 
 .social-icons a i {
