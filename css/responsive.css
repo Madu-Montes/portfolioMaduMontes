@@ -16,8 +16,10 @@
   }
 
   #quem-sou img {
-    width: 23rem;
+    width: 25rem;
+    height: 27rem;
   }
+
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -81,7 +83,6 @@
   }
 
 }
-
 
 @media (max-width: 991.98px) {
   .navbar-toggler-icon {

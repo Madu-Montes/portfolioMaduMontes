@@ -305,7 +305,8 @@ html {
 }
 
 .footer p,
-.footer i {
+.footer i,
+.footer a{
     color: #fff;
 }
 
